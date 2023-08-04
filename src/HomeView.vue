@@ -7,11 +7,11 @@ import ContentBoxes from "@/components/contentBoxes.vue";
 <template>
   <body class="websiteContainer">
 
-  <Header></Header>
+
   <hr id="seperatorHeader">
   <div id="firstImp">
     <h1 id="tagline">Plan your whole Day.</h1>
-    <p id="description">A Easy Tool to write down your Todos.<br><router-link id="descriptionLink" to="/SignUpView">Sign In now to get Full Access!</router-link></p>
+    <p id="description">A nice Tool to write down your Todos.<br><router-link id="descriptionLink" to="/SignUpView">Sign In now to get Full Access!</router-link></p>
   </div>
   <div id="buttonSection">
     <button class="getStartedBtn">Get Started ➜</button>
@@ -81,7 +81,8 @@ body {
 }
 
 #seperatorHeader {
-  border-top: 1px solid black;
+  border-top: 1px solid lightgrey;
+  width: 100%;
 }
 
 

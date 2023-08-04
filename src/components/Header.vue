@@ -11,6 +11,7 @@
         <button class="signUpButton">Log In</button>
         <button class="signUpButton">Sign In</button>
       </div>
+
     </div>
 
 
@@ -44,16 +45,21 @@ header {
 }
 
 .signUp-Container {
+  display: flex;
   margin-left: 83%;
+  margin-top: 10px;
 }
+
 .signUpButton {
   margin-right: 5px;
   background-color: #00bd7e;
   border: none;
   color: white;
-  border-radius: 10px;
-  font-size: larger;
+  border-radius: 15px;
+  font-size: 120%;
 }
+
+
 
 
 </style>

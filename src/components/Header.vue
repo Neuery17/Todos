@@ -11,7 +11,6 @@
         <button class="signUpButton">Log In</button>
         <button class="signUpButton">Sign In</button>
       </div>
-
     </div>
 
 

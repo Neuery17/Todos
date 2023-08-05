@@ -6,12 +6,11 @@ import ContentBoxes from "@/components/contentBoxes.vue";
 
 <template>
   <body class="websiteContainer">
-
-
-  <hr id="seperatorHeader">
   <div id="firstImp">
     <h1 id="tagline">Plan your whole Day.</h1>
-    <p id="description">A nice Tool to write down your Todos.<br><router-link id="descriptionLink" to="/SignUpView">Sign In now to get Full Access!</router-link></p>
+    <p id="description">A nice Tool to write down your Todos.<br>
+      <router-link id="descriptionLink" to="/SignUpView">Sign In now to get Full Access!</router-link>
+    </p>
   </div>
   <div id="buttonSection">
     <button class="getStartedBtn">Get Started ➜</button>
@@ -25,8 +24,8 @@ import ContentBoxes from "@/components/contentBoxes.vue";
 
 <style scoped>
 .websiteContainer {
+  height: calc(100% - 216px);
   width: 100%;
-  height: 100%;
   margin: 0;
 }
 
@@ -41,7 +40,8 @@ import ContentBoxes from "@/components/contentBoxes.vue";
 }
 
 .getStartedBtn {
-  margin-bottom: 10px;
+  margin-bottom: 0%;
+  margin-top: 2%;
   background-color: #00bd7e;
   border: none;
   color: white;
@@ -50,8 +50,13 @@ import ContentBoxes from "@/components/contentBoxes.vue";
   margin-right: 5px;
 }
 
+
+.getStartedBtn:hover {
+  background-color: #13aa77;
+}
+
 #buttonSection {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -70,19 +75,21 @@ body {
 #description {
   font-size: 150%;
   color: darkgrey;
-
 }
 
 #descriptionLink {
   color: darkgrey;
 
   font-size: 100%;
-
 }
 
-#seperatorHeader {
-  border-top: 1px solid lightgrey;
-  width: 100%;
+@media screen and (max-width: 790px) {
+  .contentBoxesContainer {
+    display: grid;
+    width: 500%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 

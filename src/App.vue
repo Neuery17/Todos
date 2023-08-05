@@ -6,6 +6,7 @@ import Header from "@/components/Header.vue";
 
 <template>
   <Header></Header>
+  <hr id="seperatorHeader">
   <router-view></router-view>
 
   <footer id="copyrightFooter">
@@ -19,8 +20,6 @@ import Header from "@/components/Header.vue";
 <style scoped>
 #copyright {
   color: lightgrey;
-  position: fixed;
-  width: 100%;
 }
 
 #seperatorCopyright {
@@ -28,12 +27,13 @@ import Header from "@/components/Header.vue";
 }
 
 #copyrightFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 5%;
+  margin-top: 5%;
+  margin-bottom: 0;
 }
 
-
+#seperatorHeader {
+  border-top: 1px solid lightgrey;
+  width: 100%;
+}
 
 </style>

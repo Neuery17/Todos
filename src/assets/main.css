@@ -3,6 +3,15 @@ html {
     font-family: Arial, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+    color: white
+}
+
+
+
 :root {
     --neutral-100: #fff1f1;
     --neutral-100-minor: #fff1f1ad;

@@ -4,30 +4,33 @@
 
 <template>
     <div class="cards">
-      <h2>
+      <h2 class="card-title">
         Make your life easier
       </h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+      <p class="cardContent">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
         et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
         ipsum dolor sit amet.
       </p>
     </div>
   <div class="cards">
-    <h2>
+    <h2 class="card-title">
       Make managing life easy
     </h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+    <p class="cardContent">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
       et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
       ipsum dolor sit amet.
     </p>
   </div>
   <div class="cards">
-    <h2>
+    <h2 class="card-title">
       Save time
     </h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+    <p class="cardContent">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
       et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
       ipsum dolor sit amet.
@@ -47,6 +50,14 @@
   margin-right: 20px;
   margin-top: 3%;
   padding: 5px
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.cardContent {
+  color: dimgrey;
 }
 
 </style>

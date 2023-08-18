@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -8,10 +7,7 @@
         Make your life easier
       </h2>
       <p class="cardContent">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet.
+        Transform the way you handle tasks and responsibilities, making every day more manageable and stress-free with our user-friendly Todo list tool.
       </p>
     </div>
   <div class="cards">
@@ -19,10 +15,7 @@
       Make managing life easy
     </h2>
     <p class="cardContent">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-      et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-      ipsum dolor sit amet.
+      Discover the ultimate tool for effortlessly managing your life's demands. Our Todo list system empowers you to stay in control and achieve more with less effort.
     </p>
   </div>
   <div class="cards">
@@ -30,10 +23,7 @@
       Save time
     </h2>
     <p class="cardContent">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-      et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-      ipsum dolor sit amet.
+      Unlock extra hours in your day by optimizing your task management with our efficient Todo list platform. Say goodbye to wasted time and hello to increased productivity.
     </p>
   </div>
 </template>
@@ -49,7 +39,7 @@
   border-radius: 10px;
   margin-right: 20px;
   margin-top: 3%;
-  padding: 5px
+  padding: 5px;
 }
 
 .card-title {
@@ -60,4 +50,10 @@
   color: dimgrey;
 }
 
+@media screen and (max-width: 790px) {
+  .cards {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 </style>

@@ -1,6 +1,7 @@
 html {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 
 * {
@@ -9,8 +10,6 @@ html {
     background-color: #252525;
     color: white
 }
-
-
 
 :root {
     --neutral-100: #fff1f1;

@@ -51,8 +51,6 @@ function confirmPwd () {
   } else {
     pwdCheck.value = true
   }
-
-
 }
 
 function confirmConfPwd () {
@@ -65,30 +63,24 @@ function confirmConfPwd () {
 }
 
 function confirmCreation () {
-  confirmUName()
-  confirmEmail()
-  confirmPwd()
-  confirmConfPwd()
-
-  /*if () {
+  if (uNameCheck.value && emailCheck.value && emailValidCheck.value && confPwdCheck.value && pwdCheck.value) {
     account.value = {uName: uName.value, email: email.value, password: password.value}
     alert.value = ""
+    createAccount()
   } else {
     alert.value = "Incomplete Data!"
-  }*/
+  }
 }
 
-
-
-
+function createAccount () {
+  console.log("Hallo")
+}
 </script>
 
 <template>
-
-
   <div id="container">
     <div id="inputContainer">
-      <h1 class="alert"> {{ alert }}</h1>
+      <p class="alert"> {{ alert }}</p>
       <label class="signInLabel">Create an free Account</label>
       <div class="inputFieldDiv">
         <input class="inputField" @keyup="confirmUName" v-model="uName" placeholder="Username">
@@ -107,16 +99,12 @@ function confirmCreation () {
         <input type="password" class="inputField" @keyup="confirmConfPwd" v-model="confPassword" placeholder="Confirm Password">
         <p class="alert" v-if="!confPwdCheck && pwdConfKeyPressed">The passwords do not match!</p>
       </div>
-
       <button id="createBtn" @click="confirmCreation">Create Account</button>
   </div>
-
   </div>
-
 </template>
 
 <style scoped>
-
 #inputContainer {
   display: inline-grid;
   align-content: center;
@@ -159,8 +147,7 @@ p.alert {
   font-size: 200%;
 }
 
-
-
-
-
+#createBtn:hover {
+  background-color: #13aa77;
+}
 </style>

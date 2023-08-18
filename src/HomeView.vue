@@ -1,6 +1,4 @@
 <script setup>
-
-import Header from "@/components/Header.vue";
 import ContentBoxes from "@/components/contentBoxes.vue";
 </script>
 
@@ -18,21 +16,20 @@ import ContentBoxes from "@/components/contentBoxes.vue";
   <div class="contentBoxesContainer">
     <content-boxes></content-boxes>
   </div>
-
   </body>
 </template>
 
 <style scoped>
 .websiteContainer {
-  height: calc(100% - 216px);
-  width: 100%;
   margin: 0;
+  height: 80%;
 }
-
 
 .contentBoxesContainer {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 #firstImp {
@@ -40,7 +37,7 @@ import ContentBoxes from "@/components/contentBoxes.vue";
 }
 
 .getStartedBtn {
-  margin-bottom: 0%;
+  margin-bottom: 0;
   margin-top: 2%;
   background-color: #00bd7e;
   border: none;
@@ -49,7 +46,6 @@ import ContentBoxes from "@/components/contentBoxes.vue";
   font-size: larger;
   margin-right: 5px;
 }
-
 
 .getStartedBtn:hover {
   background-color: #13aa77;
@@ -79,7 +75,6 @@ body {
 
 #descriptionLink {
   color: darkgrey;
-
   font-size: 100%;
 }
 

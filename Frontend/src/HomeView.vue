@@ -81,9 +81,6 @@ body {
 @media screen and (max-width: 790px) {
   .contentBoxesContainer {
     display: grid;
-    width: 500%;
-    margin-right: 10%;
-    margin-left: 10%;
   }
 }
 

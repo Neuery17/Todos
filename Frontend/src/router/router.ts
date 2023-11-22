@@ -1,16 +1,18 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
-import HomeView from "../Views/HomeView.vue";
-import SignUpView from "@/SignUpView.vue";
-import LogInView from "@/LogInView.vue";
 import DefaultLayout from "../Views/DefaultLayout.vue";
 import NoFooterLayout from "../Views/NoFooterLayout.vue";
+import HomeView from "frontend/src/Views/HomeView.vue";
 
 const routes : Array<RouteRecordRaw> = [
     {
         path: "/",
         component: DefaultLayout,
         children: [
-
+            {
+                path: "home",
+                name: "home",
+                component: HomeView
+            }
         ]
     },
     {

@@ -12,10 +12,11 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code
-COPY . .
+COPY src .
 
 # Expose the port that the application listens on.
-EXPOSE 10001
+EXPOSE 4001
 
 # Run the application.
 CMD ["npm", "run", "dev"]
+

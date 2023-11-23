@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
-import DefaultLayout from "../Views/DefaultLayout.vue";
-import NoFooterLayout from "../Views/NoFooterLayout.vue";
-import HomeView from "frontend/src/Views/HomeView.vue";
+import DefaultLayout from "@/Views/DefaultLayout.vue"
+import NoFooterLayout from "@/Views/NoFooterLayout.vue";
+import HomeView from "@/Views/HomeView.vue";
 
 const routes : Array<RouteRecordRaw> = [
     {
